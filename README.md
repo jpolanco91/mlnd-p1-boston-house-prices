@@ -4,16 +4,28 @@
 
 ### Install
 
-This project requires **Python 2.7**(if you complete this project in Python 3.x, you will have to update the code in various places including all relevant print statements) and the following Python libraries installed:
+This project requires **Python 3.9**(included on the anaconda environment .yml file) and the following Python libraries installed:
 
 - [NumPy](http://www.numpy.org/)
 - [Pandas](http://pandas.pydata.org/)
 - [matplotlib](http://matplotlib.org/)
 - [scikit-learn](http://scikit-learn.org/stable/)
+- [Jupyter Notebook](http://ipython.org/notebook.html)
 
-You will also need to have software installed to run and execute a [Jupyter Notebook](http://ipython.org/notebook.html)
 
-If you do not have Python installed yet, it is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python, which already has the above packages and more included. Make sure that you select the Python 2.7 installer and not the Python 3.x installer.
+First you must download and install the [Anaconda](http://continuum.io/downloads) distribution of Python, which already has the above packages and more included. After downloading Anaconda we will proceed to install the `boston-house-prices` environment, which includes all the above libraries to run the code. To install the environment we run this command in this project's folder:
+
+```bash
+conda env create -f boston-house-prices.yml
+```
+
+This code will install all of the previously mentioned libraries needed to run this project. After the environment installation completes, we must then activate the environment in order to be able to run the code:
+
+```bash
+conda activate boston-house-prices
+```
+
+After running this code we're now ready to run the project's code. The instructions to run it are on the next section of these docs.
 
 ### Code
 
@@ -44,3 +56,11 @@ The modified Boston housing dataset consists of 489 data points, with each datap
 
 **Target Variable**
 4. `MEDV`: median value of owner-occupied homes
+
+### Deactivating environment.
+
+If we want to deactivate the conda's environment for this project we run this command:
+
+```bash
+conda deactivate.
+```
