@@ -1,0 +1,10 @@
+name: boston-house-prices
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - jupyter
+  - pandas
+  - scikit-learn
+  - matplotlib
